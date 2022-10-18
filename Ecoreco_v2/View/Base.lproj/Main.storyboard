@@ -1093,7 +1093,6 @@ AI 기반 친환경 이커머스</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="MoveToCommunity:" destination="MBi-i3-90v" eventType="touchUpInside" id="AXl-G1-whO"/>
                                                     <action selector="moveToCommunity:" destination="MBi-i3-90v" eventType="touchUpInside" id="0YW-I2-MMZ"/>
                                                 </connections>
                                             </button>
