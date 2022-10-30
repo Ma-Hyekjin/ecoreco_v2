@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30963C5290E6E4A002DE2DD /* StandardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30963C4290E6E4A002DE2DD /* StandardViewController.swift */; };
 		A3766C1C28FC21E80037B83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C1B28FC21E80037B83C /* AppDelegate.swift */; };
 		A3766C1E28FC21E80037B83C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C1D28FC21E80037B83C /* SceneDelegate.swift */; };
 		A3766C2328FC21E80037B83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3766C2128FC21E80037B83C /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A30963C4290E6E4A002DE2DD /* StandardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardViewController.swift; sourceTree = "<group>"; };
 		A3766C1828FC21E80037B83C /* Ecoreco_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecoreco_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3766C1B28FC21E80037B83C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3766C1D28FC21E80037B83C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				A3766C6128FC22ED0037B83C /* HomeViewController.swift */,
+				A30963C4290E6E4A002DE2DD /* StandardViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				A3766C6C28FC27A50037B83C /* IntroViewController.swift in Sources */,
 				A3766C5728FC22960037B83C /* RegisterViewController.swift in Sources */,
 				A3766C5B28FC22D30037B83C /* LikesViewController.swift in Sources */,
+				A30963C5290E6E4A002DE2DD /* StandardViewController.swift in Sources */,
 				A3766C6428FC25E60037B83C /* UserInfo.swift in Sources */,
 				A3766C5E28FC22E10037B83C /* CommunityViewController.swift in Sources */,
 			);

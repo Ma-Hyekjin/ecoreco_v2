@@ -37,4 +37,10 @@ extension UIColor {
         green: 0.980,
         blue: 0.984,
         alpha: 1)
+    
+    static let customedYellow = UIColor(
+        red:0.984,
+        green:1.000,
+        blue:0.973,
+        alpha:1)
 }

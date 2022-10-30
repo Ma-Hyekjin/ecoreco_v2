@@ -28,7 +28,7 @@ class IntroViewController: UIViewController {
     }
     
     @IBAction func moveToHome(_ sender: UIButton) {
-        let homeViewController = storyboard?.instantiateViewController(identifier: "HomeVC") as! HomeViewController
+        let homeViewController = storyboard?.instantiateViewController(identifier: "TabVC") as! UITabBarController
         
         self.navigationController?.pushViewController(homeViewController, animated: true)
     }
