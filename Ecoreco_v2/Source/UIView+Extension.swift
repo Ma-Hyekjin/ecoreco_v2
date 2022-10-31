@@ -52,7 +52,7 @@ extension UIView {
         }
         set{
             //그림자의 색이 지정됬을 경우
-            self.layer.shadowOffset = CGSize(width: 10, height: 10)
+            self.layer.shadowOffset = CGSize(width: 5, height: 5)
             //shadowOffset은 빛의 위치를 지정해준다. 북쪽에 있으면 남쪽으로 그림지가 생기는 것
             self.layer.shadowColor = newValue.cgColor
             //그림자의 색을 지정
