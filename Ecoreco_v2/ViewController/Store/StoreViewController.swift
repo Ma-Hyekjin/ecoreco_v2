@@ -69,7 +69,12 @@ class StoreViewController: UIViewController {
     
     
     @IBAction func goToCart(_ sender: UIButton) {
-        //장보기창 이동 or 팝업 띄우기
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let paymentViewController = storyboard.instantiateViewController(withIdentifier: "payVC")
+        paymentViewController.modalPresentationStyle = .overCurrentContext
+        self.present(paymentViewController, animated: true, completion: nil)
+
+        
     }
     
     @IBOutlet weak var skinCare: UIButton!
