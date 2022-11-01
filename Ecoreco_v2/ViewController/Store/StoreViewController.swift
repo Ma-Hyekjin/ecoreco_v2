@@ -18,6 +18,55 @@ class StoreViewController: UIViewController {
     var count8 : Bool = false
     var count9 : Bool = false
     var count10 : Bool = false
+    var get1 : Bool = false
+    var get2 : Bool = false
+    var get3 : Bool = false
+    var get4 : Bool = false
+    var get5 : Bool = false
+    var get6 : Bool = false
+    var get7 : Bool = false
+    var get8 : Bool = false
+    
+    
+    @IBOutlet weak var addToCart1: UIView!
+    @IBAction func addToCartTab(_ sender: UIButton) {
+        if self.get1 == true {
+            self.get1 = false
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "popVC") as! PopUpViewController
+            vc.modalPresentationStyle = .overCurrentContext
+            self.present(vc, animated: true, completion: nil)
+            UIView.animate(withDuration: 0.1){
+                self.addToCart1.backgroundColor = UIColor.customedEco
+            }
+        } else {
+            self.get1 = true
+            UIView.animate(withDuration: 0.1){
+                self.addToCart1.backgroundColor = UIColor.customedWhite
+            }
+        }
+    }
+    
+    @IBOutlet weak var addToCart2: UIView!
+    @IBAction func AddToCartTab2(_ sender: UIButton) {
+        if self.get2 == true {
+            self.get2 = false
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let popUpViewController2 = storyboard.instantiateViewController(withIdentifier: "popVC2")
+            popUpViewController2.modalPresentationStyle = .overCurrentContext
+            self.present(popUpViewController2, animated: true, completion: nil)
+            
+            UIView.animate(withDuration: 0.1){
+                self.addToCart2.backgroundColor = UIColor.customedEco
+            }
+        } else {
+            self.get2 = true
+            UIView.animate(withDuration: 0.1){
+                self.addToCart2.backgroundColor = UIColor.customedWhite
+            }
+        }
+    }
+    
     
     @IBAction func goToCart(_ sender: UIButton) {
         //장보기창 이동 or 팝업 띄우기
@@ -172,6 +221,8 @@ class StoreViewController: UIViewController {
 //    var arrImageSet: [String] = ["image1", "image2", "image3", "image4", "image5", "image6"]
 
     @IBOutlet weak var searchBar: UISearchBar!
+    
+    
     
     
     override func viewDidLoad() {

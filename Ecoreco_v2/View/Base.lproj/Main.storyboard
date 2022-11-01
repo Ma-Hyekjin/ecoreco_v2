@@ -2124,10 +2124,92 @@ AI 기반 친환경 이커머스</string>
             </objects>
             <point key="canvasLocation" x="3045" y="2170"/>
         </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="oHg-Vy-KPy">
+            <objects>
+                <viewController storyboardIdentifier="popVC" id="R0D-Bb-ihL" customClass="PopUpViewController" customModule="Ecoreco_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dbr-O7-WXk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6z-Kn-tAa">
+                                <rect key="frame" x="28.5" y="637" width="357" height="195"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iamge1" translatesAutoresizingMaskIntoConstraints="NO" id="kYs-kF-Rkh">
+                                        <rect key="frame" x="25" y="25" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="c8i-FM-JDj"/>
+                                            <constraint firstAttribute="height" constant="60" id="cbI-MU-dmq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnA-J1-tVg">
+                                        <rect key="frame" x="18.5" y="121" width="320" height="60"/>
+                                        <color key="backgroundColor" name="ecorecoColor2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="IRo-wS-Hnl"/>
+                                            <constraint firstAttribute="height" constant="60" id="qHD-Ov-Ab9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="장바구니 담기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="inCart:" destination="R0D-Bb-ihL" eventType="touchUpInside" id="xpP-o9-lel"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[라이브비건] 라벤더 클렌징바 (150g)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VD-eu-HGd">
+                                        <rect key="frame" x="95" y="30" width="214" height="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZO-aO-ESR">
+                                        <rect key="frame" x="95" y="67" width="60" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="2VD-eu-HGd" firstAttribute="leading" secondItem="kYs-kF-Rkh" secondAttribute="trailing" constant="10" id="0vL-fg-OWy"/>
+                                    <constraint firstItem="QnA-J1-tVg" firstAttribute="centerX" secondItem="c6z-Kn-tAa" secondAttribute="centerX" id="6tb-BA-Ifr"/>
+                                    <constraint firstItem="kYs-kF-Rkh" firstAttribute="top" secondItem="c6z-Kn-tAa" secondAttribute="top" constant="25" id="7d5-qq-7RZ"/>
+                                    <constraint firstItem="kYs-kF-Rkh" firstAttribute="leading" secondItem="c6z-Kn-tAa" secondAttribute="leading" constant="25" id="ABD-qr-jUy"/>
+                                    <constraint firstItem="5ZO-aO-ESR" firstAttribute="leading" secondItem="2VD-eu-HGd" secondAttribute="leading" id="HU9-Ra-tYC"/>
+                                    <constraint firstAttribute="bottom" secondItem="QnA-J1-tVg" secondAttribute="bottom" constant="14" id="U4w-xP-JiJ"/>
+                                    <constraint firstAttribute="height" constant="195" id="iMh-nf-OxM"/>
+                                    <constraint firstItem="5ZO-aO-ESR" firstAttribute="top" secondItem="2VD-eu-HGd" secondAttribute="bottom" constant="20" id="jqg-2b-VdO"/>
+                                    <constraint firstAttribute="width" constant="357" id="lHW-Dd-K0i"/>
+                                    <constraint firstItem="2VD-eu-HGd" firstAttribute="top" secondItem="c6z-Kn-tAa" secondAttribute="top" constant="30" id="nem-lO-mWw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P1h-Q6-Xzx"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.50422512755102045" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P1h-Q6-Xzx" firstAttribute="bottom" secondItem="c6z-Kn-tAa" secondAttribute="bottom" constant="30" id="hZo-hF-9pq"/>
+                            <constraint firstItem="c6z-Kn-tAa" firstAttribute="centerX" secondItem="Dbr-O7-WXk" secondAttribute="centerX" id="xBO-dJ-xBA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvb-9N-oAf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4410" y="1491"/>
+        </scene>
         <!--Store View Controller-->
         <scene sceneID="xQL-gZ-crJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifc-j1-zOS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="StoreVC" id="pWz-br-AsZ" customClass="StoreViewController" customModule="Ecoreco_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xvC-3M-tlW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1296"/>
@@ -2733,6 +2815,62 @@ AI 기반 친환경 이커머스</string>
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMy-TC-KMl">
+                                                <rect key="frame" x="123" y="416" width="39" height="39"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3l-4b-NRC">
+                                                        <rect key="frame" x="7.5" y="7.5" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="Cbk-hv-MvV"/>
+                                                            <constraint firstAttribute="width" constant="24" id="gNE-c7-yUq"/>
+                                                        </constraints>
+                                                        <state key="normal" image="cart-add"/>
+                                                        <connections>
+                                                            <action selector="addToCartTab:" destination="pWz-br-AsZ" eventType="touchUpInside" id="gBM-l6-bKc"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="0.499734268707483" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="O3l-4b-NRC" firstAttribute="centerX" secondItem="WMy-TC-KMl" secondAttribute="centerX" id="CRa-vV-Jaz"/>
+                                                    <constraint firstItem="O3l-4b-NRC" firstAttribute="centerY" secondItem="WMy-TC-KMl" secondAttribute="centerY" id="hqT-s5-3Nc"/>
+                                                    <constraint firstAttribute="width" constant="39" id="jkY-Hi-6zw"/>
+                                                    <constraint firstAttribute="height" constant="39" id="oGD-3G-aL8"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="19"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-rK-wMi">
+                                                <rect key="frame" x="338" y="416" width="39" height="39"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHA-rv-mYd">
+                                                        <rect key="frame" x="7.5" y="7.5" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="a2C-SI-toB"/>
+                                                            <constraint firstAttribute="height" constant="24" id="jhd-lL-O67"/>
+                                                        </constraints>
+                                                        <state key="normal" image="cart-add"/>
+                                                        <connections>
+                                                            <action selector="AddToCartTab2:" destination="pWz-br-AsZ" eventType="touchUpInside" id="Jnc-vf-Bbt"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="0.49973426869999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="962-8s-8s6"/>
+                                                    <constraint firstItem="oHA-rv-mYd" firstAttribute="centerX" secondItem="5eh-rK-wMi" secondAttribute="centerX" id="Fvq-XM-JiS"/>
+                                                    <constraint firstItem="oHA-rv-mYd" firstAttribute="centerY" secondItem="5eh-rK-wMi" secondAttribute="centerY" id="jRB-Xg-Qow"/>
+                                                    <constraint firstAttribute="width" constant="39" id="tpK-fv-gzP"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="19"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -2744,8 +2882,10 @@ AI 기반 친환경 이커머스</string>
                                             <constraint firstItem="NmW-8e-tOa" firstAttribute="top" secondItem="0q1-Kq-Mz5" secondAttribute="bottom" constant="5" id="7ME-KF-jcQ"/>
                                             <constraint firstItem="M1d-0e-aJ5" firstAttribute="top" secondItem="0ai-RS-hje" secondAttribute="bottom" constant="25" id="8ei-K3-9d1"/>
                                             <constraint firstItem="IKW-ua-NTD" firstAttribute="top" secondItem="NmW-8e-tOa" secondAttribute="bottom" id="A9W-sK-5Sg"/>
+                                            <constraint firstItem="66Z-zP-wm3" firstAttribute="top" secondItem="WMy-TC-KMl" secondAttribute="bottom" constant="-135" id="AGk-va-jxm"/>
                                             <constraint firstItem="mmg-7g-zc5" firstAttribute="leading" secondItem="TNi-vs-4wR" secondAttribute="trailing" constant="10" id="BQD-31-wiv"/>
                                             <constraint firstItem="sT8-Of-aQF" firstAttribute="leading" secondItem="mbA-vM-Fy5" secondAttribute="leading" id="CTS-Dv-6xs"/>
+                                            <constraint firstItem="0q1-Kq-Mz5" firstAttribute="top" secondItem="5eh-rK-wMi" secondAttribute="bottom" constant="-135" id="DOZ-89-RDw"/>
                                             <constraint firstItem="Gk1-ki-xya" firstAttribute="leading" secondItem="66Z-zP-wm3" secondAttribute="leading" id="Dbp-9i-f4Q"/>
                                             <constraint firstAttribute="trailing" secondItem="czA-ii-6ZW" secondAttribute="trailing" constant="17" id="Dto-AL-VeT"/>
                                             <constraint firstAttribute="bottom" secondItem="Z4b-uq-1Bv" secondAttribute="bottom" constant="1168.5" id="DxY-Q9-Znc"/>
@@ -2775,6 +2915,7 @@ AI 기반 친환경 이커머스</string>
                                             <constraint firstItem="B5X-Fd-vv7" firstAttribute="top" secondItem="A0d-hz-VC6" secondAttribute="bottom" id="UFP-je-biX"/>
                                             <constraint firstItem="krx-gI-1w1" firstAttribute="top" secondItem="huc-Qo-kVK" secondAttribute="bottom" id="Ub9-TP-uZj"/>
                                             <constraint firstItem="6F8-71-RJg" firstAttribute="top" secondItem="sT8-Of-aQF" secondAttribute="bottom" id="UeP-yo-doh"/>
+                                            <constraint firstItem="0q1-Kq-Mz5" firstAttribute="leading" secondItem="5eh-rK-wMi" secondAttribute="trailing" constant="-135" id="Uhe-Dl-Fyv"/>
                                             <constraint firstItem="huc-Qo-kVK" firstAttribute="leading" secondItem="RMW-FW-Uta" secondAttribute="leading" id="VHh-Ou-K2F"/>
                                             <constraint firstItem="B5X-Fd-vv7" firstAttribute="leading" secondItem="66Z-zP-wm3" secondAttribute="leading" id="VLR-fh-AL4"/>
                                             <constraint firstItem="l0W-fz-KkA" firstAttribute="leading" secondItem="FOO-NH-LgG" secondAttribute="leading" id="Vaa-Gp-8OT"/>
@@ -2814,6 +2955,7 @@ AI 기반 친환경 이커머스</string>
                                             <constraint firstItem="0q1-Kq-Mz5" firstAttribute="centerY" secondItem="66Z-zP-wm3" secondAttribute="centerY" id="qBf-ms-NjI"/>
                                             <constraint firstItem="66Z-zP-wm3" firstAttribute="top" secondItem="KI3-dJ-j0X" secondAttribute="bottom" constant="10" id="qF9-9B-lzO"/>
                                             <constraint firstItem="0ai-RS-hje" firstAttribute="top" secondItem="czA-ii-6ZW" secondAttribute="bottom" constant="30" id="qix-Gw-epq"/>
+                                            <constraint firstItem="66Z-zP-wm3" firstAttribute="leading" secondItem="WMy-TC-KMl" secondAttribute="trailing" constant="-135" id="qyI-aa-E1a"/>
                                             <constraint firstItem="Z4b-uq-1Bv" firstAttribute="top" secondItem="B0K-CG-rwp" secondAttribute="top" constant="11.5" id="rVM-Gw-fOp"/>
                                             <constraint firstItem="iug-GU-oxa" firstAttribute="top" secondItem="ceo-U2-Rto" secondAttribute="bottom" id="rpb-jk-Wrf"/>
                                             <constraint firstAttribute="trailing" secondItem="Z4b-uq-1Bv" secondAttribute="trailing" constant="29.5" id="sc5-WM-lh9"/>
@@ -2855,6 +2997,8 @@ AI 기반 친환경 이커머스</string>
                     <navigationItem key="navigationItem" id="vMM-DL-eET"/>
                     <size key="freeformSize" width="414" height="1296"/>
                     <connections>
+                        <outlet property="addToCart1" destination="WMy-TC-KMl" id="qpp-9o-SIo"/>
+                        <outlet property="addToCart2" destination="5eh-rK-wMi" id="DGS-a4-U1D"/>
                         <outlet property="cruelty" destination="M1d-0e-aJ5" id="PjP-g2-abe"/>
                         <outlet property="eco" destination="TNi-vs-4wR" id="aVT-uB-3sK"/>
                         <outlet property="multi" destination="0ai-RS-hje" id="X0m-4s-qot"/>
@@ -2866,6 +3010,7 @@ AI 기반 친환경 이커머스</string>
                         <outlet property="wash" destination="D74-Pv-yS2" id="MEw-yi-e71"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifc-j1-zOS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2350.7246376811595" y="2303.5714285714284"/>
         </scene>
@@ -2897,6 +3042,89 @@ AI 기반 친환경 이커머스</string>
             </objects>
             <point key="canvasLocation" x="1638" y="2170"/>
         </scene>
+        <!--Pop Up View Controller2-->
+        <scene sceneID="3Sw-wK-cHW">
+            <objects>
+                <viewController storyboardIdentifier="popVC2" id="KOA-sd-cy0" customClass="PopUpViewController2" customModule="Ecoreco_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E2p-Gc-nct">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFv-lp-ckQ">
+                                <rect key="frame" x="28.5" y="637" width="357" height="195"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="nwX-xZ-hzq">
+                                        <rect key="frame" x="25" y="25" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="5mt-Nd-30x"/>
+                                            <constraint firstAttribute="width" constant="60" id="ypa-Bu-6Ht"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWM-cY-zfk">
+                                        <rect key="frame" x="18.5" y="121" width="320" height="60"/>
+                                        <color key="backgroundColor" name="ecorecoColor2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="JeM-jp-Ecj"/>
+                                            <constraint firstAttribute="width" constant="320" id="N6j-i3-nxl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="장바구니 담기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addToCart:" destination="KOA-sd-cy0" eventType="touchUpInside" id="E9Q-EM-h4a"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[애니랩] 더 순한 세럼 (50ml)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJc-wf-ahq">
+                                        <rect key="frame" x="95" y="30" width="170" height="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNz-kK-Pmn">
+                                        <rect key="frame" x="95" y="67" width="62" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="nwX-xZ-hzq" firstAttribute="leading" secondItem="eFv-lp-ckQ" secondAttribute="leading" constant="25" id="A6N-uW-ufe"/>
+                                    <constraint firstItem="aJc-wf-ahq" firstAttribute="top" secondItem="eFv-lp-ckQ" secondAttribute="top" constant="30" id="Ciw-FG-sva"/>
+                                    <constraint firstAttribute="width" constant="357" id="FBJ-Te-880"/>
+                                    <constraint firstItem="tWM-cY-zfk" firstAttribute="centerX" secondItem="eFv-lp-ckQ" secondAttribute="centerX" id="Ztx-kc-x1W"/>
+                                    <constraint firstItem="aJc-wf-ahq" firstAttribute="leading" secondItem="nwX-xZ-hzq" secondAttribute="trailing" constant="10" id="dBE-z1-Msl"/>
+                                    <constraint firstItem="fNz-kK-Pmn" firstAttribute="leading" secondItem="aJc-wf-ahq" secondAttribute="leading" id="ezC-jo-Cp3"/>
+                                    <constraint firstItem="fNz-kK-Pmn" firstAttribute="top" secondItem="aJc-wf-ahq" secondAttribute="bottom" constant="20" id="lsO-bi-ZmL"/>
+                                    <constraint firstAttribute="bottom" secondItem="tWM-cY-zfk" secondAttribute="bottom" constant="14" id="xjm-jF-Vf7"/>
+                                    <constraint firstAttribute="height" constant="195" id="ywU-fx-C4h"/>
+                                    <constraint firstItem="nwX-xZ-hzq" firstAttribute="top" secondItem="eFv-lp-ckQ" secondAttribute="top" constant="25" id="z5c-2F-XR8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jw7-Sa-GZN"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.50422512760000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eFv-lp-ckQ" firstAttribute="centerX" secondItem="E2p-Gc-nct" secondAttribute="centerX" id="PVs-6n-SVz"/>
+                            <constraint firstItem="jw7-Sa-GZN" firstAttribute="bottom" secondItem="eFv-lp-ckQ" secondAttribute="bottom" constant="30" id="d0b-fZ-LFE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eka-R1-LXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5097" y="1491"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Myprofile_image" width="32" height="32.5"/>
@@ -2906,6 +3134,7 @@ AI 기반 친환경 이커머스</string>
         <image name="best2" width="90" height="90"/>
         <image name="bpa-free_image" width="33" height="33.5"/>
         <image name="cart" width="35" height="33"/>
+        <image name="cart-add" width="36" height="36"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="cruelty-free_image" width="31" height="31"/>
         <image name="eco-friendly_image" width="30" height="30"/>
