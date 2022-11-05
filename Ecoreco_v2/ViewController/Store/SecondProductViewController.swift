@@ -1,13 +1,13 @@
 //
-//  CommunityViewController.swift
+//  SecondProductViewController.swift
 //  Ecoreco_v2
 //
-//  Created by 마혁진 on 2022/10/16.
+//  Created by 마혁진 on 2022/11/04.
 //
 
 import UIKit
 
-class CommunityViewController: UIViewController {
+class SecondProductViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

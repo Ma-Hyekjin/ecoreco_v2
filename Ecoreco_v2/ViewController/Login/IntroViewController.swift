@@ -16,11 +16,11 @@ class IntroViewController: UIViewController {
         self.navigationController?.pushViewController(storeViewController, animated: true)
     }
     
-    @IBAction func moveToCommunity(_ sender: UIButton) {
-        let communityViewController = storyboard?.instantiateViewController(identifier: "CommunityVC") as! CommunityViewController
-        
-        self.navigationController?.pushViewController(communityViewController, animated: true)
-    }
+//    @IBAction func moveToCommunity(_ sender: UIButton) {
+//        let communityViewController = storyboard?.instantiateViewController(identifier: "CommunityVC") as! CommunityViewController
+//        
+//        self.navigationController?.pushViewController(communityViewController, animated: true)
+//    }
     
 
     @IBAction func moveToEvent(_ sender: UIButton) {

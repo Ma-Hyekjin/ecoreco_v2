@@ -9,21 +9,24 @@ import UIKit
 
 class LikesViewController: UIViewController {
 
+    @IBAction func goToBrand(_ sender: UIButton) {
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyBoard.instantiateViewController(withIdentifier: "BrandVC") as! LikesBrandViewController
+//        vc.modalPresentationStyle = .overCurrentContext
+//        self.present(vc, animated: false, completion: nil)
+//        
+        let brandViewController = storyboard?.instantiateViewController(identifier: "BrandVC") as! LikesBrandViewController
+        self.navigationController?.pushViewController(brandViewController, animated: false)
+    }
+    @IBAction func goToProductPage(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "FirstProductVC") as! FirstProductViewController
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

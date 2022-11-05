@@ -12,6 +12,9 @@
 		A30963C92910B5CA002DE2DD /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30963C82910B5CA002DE2DD /* PopUpViewController.swift */; };
 		A30963CB2910DD21002DE2DD /* PopUpViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30963CA2910DD21002DE2DD /* PopUpViewController2.swift */; };
 		A30963CD2910FBE6002DE2DD /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30963CC2910FBE6002DE2DD /* PaymentViewController.swift */; };
+		A30963CF291292B0002DE2DD /* VeganViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30963CE291292B0002DE2DD /* VeganViewController.swift */; };
+		A30963D12914BCEB002DE2DD /* FirstProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30963D02914BCEB002DE2DD /* FirstProductViewController.swift */; };
+		A30963D32914BCF8002DE2DD /* SecondProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30963D22914BCF8002DE2DD /* SecondProductViewController.swift */; };
 		A3766C1C28FC21E80037B83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C1B28FC21E80037B83C /* AppDelegate.swift */; };
 		A3766C1E28FC21E80037B83C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C1D28FC21E80037B83C /* SceneDelegate.swift */; };
 		A3766C2328FC21E80037B83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3766C2128FC21E80037B83C /* Main.storyboard */; };
@@ -23,7 +26,6 @@
 		A3766C5728FC22960037B83C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C5628FC22960037B83C /* RegisterViewController.swift */; };
 		A3766C5928FC22CA0037B83C /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C5828FC22CA0037B83C /* MyPageViewController.swift */; };
 		A3766C5B28FC22D30037B83C /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C5A28FC22D30037B83C /* LikesViewController.swift */; };
-		A3766C5E28FC22E10037B83C /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C5D28FC22E10037B83C /* CommunityViewController.swift */; };
 		A3766C6028FC22E70037B83C /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C5F28FC22E70037B83C /* StoreViewController.swift */; };
 		A3766C6228FC22ED0037B83C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C6128FC22ED0037B83C /* HomeViewController.swift */; };
 		A3766C6428FC25E60037B83C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C6328FC25E60037B83C /* UserInfo.swift */; };
@@ -34,6 +36,8 @@
 		A3766C6E28FC44FC0037B83C /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C6D28FC44FC0037B83C /* NicknameViewController.swift */; };
 		A3766C7028FC45170037B83C /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C6F28FC45170037B83C /* UserInfoViewController.swift */; };
 		A3766C7228FC6B150037B83C /* NicknameStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3766C7128FC6B150037B83C /* NicknameStruct.swift */; };
+		A3A47E932916917E00272BEB /* LikesBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A47E922916917E00272BEB /* LikesBrandViewController.swift */; };
+		A3CE03082916A7FC0021BBF3 /* ExplainLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CE03072916A7FC0021BBF3 /* ExplainLevelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,9 @@
 		A30963C82910B5CA002DE2DD /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		A30963CA2910DD21002DE2DD /* PopUpViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController2.swift; sourceTree = "<group>"; };
 		A30963CC2910FBE6002DE2DD /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		A30963CE291292B0002DE2DD /* VeganViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganViewController.swift; sourceTree = "<group>"; };
+		A30963D02914BCEB002DE2DD /* FirstProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProductViewController.swift; sourceTree = "<group>"; };
+		A30963D22914BCF8002DE2DD /* SecondProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondProductViewController.swift; sourceTree = "<group>"; };
 		A3766C1828FC21E80037B83C /* Ecoreco_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecoreco_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3766C1B28FC21E80037B83C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3766C1D28FC21E80037B83C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +83,6 @@
 		A3766C5628FC22960037B83C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A3766C5828FC22CA0037B83C /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		A3766C5A28FC22D30037B83C /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
-		A3766C5D28FC22E10037B83C /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		A3766C5F28FC22E70037B83C /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		A3766C6128FC22ED0037B83C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A3766C6328FC25E60037B83C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 		A3766C6D28FC44FC0037B83C /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		A3766C6F28FC45170037B83C /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		A3766C7128FC6B150037B83C /* NicknameStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameStruct.swift; sourceTree = "<group>"; };
+		A3A47E922916917E00272BEB /* LikesBrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesBrandViewController.swift; sourceTree = "<group>"; };
+		A3CE03072916A7FC0021BBF3 /* ExplainLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainLevelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +200,6 @@
 				A3766C5328FC22860037B83C /* Login */,
 				A3766C5228FC22220037B83C /* Mypage */,
 				A3766C5128FC22140037B83C /* Likes */,
-				A3766C5028FC22080037B83C /* Community */,
 				A3766C4F28FC22040037B83C /* Store */,
 				A3766C4E28FC21FF0037B83C /* Home */,
 			);
@@ -204,6 +211,7 @@
 			children = (
 				A3766C6128FC22ED0037B83C /* HomeViewController.swift */,
 				A30963C4290E6E4A002DE2DD /* StandardViewController.swift */,
+				A30963CE291292B0002DE2DD /* VeganViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -216,22 +224,17 @@
 				A30963C82910B5CA002DE2DD /* PopUpViewController.swift */,
 				A30963CA2910DD21002DE2DD /* PopUpViewController2.swift */,
 				A30963CC2910FBE6002DE2DD /* PaymentViewController.swift */,
+				A30963D02914BCEB002DE2DD /* FirstProductViewController.swift */,
+				A30963D22914BCF8002DE2DD /* SecondProductViewController.swift */,
 			);
 			path = Store;
-			sourceTree = "<group>";
-		};
-		A3766C5028FC22080037B83C /* Community */ = {
-			isa = PBXGroup;
-			children = (
-				A3766C5D28FC22E10037B83C /* CommunityViewController.swift */,
-			);
-			path = Community;
 			sourceTree = "<group>";
 		};
 		A3766C5128FC22140037B83C /* Likes */ = {
 			isa = PBXGroup;
 			children = (
 				A3766C5A28FC22D30037B83C /* LikesViewController.swift */,
+				A3A47E922916917E00272BEB /* LikesBrandViewController.swift */,
 			);
 			path = Likes;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				A3766C5828FC22CA0037B83C /* MyPageViewController.swift */,
+				A3CE03072916A7FC0021BBF3 /* ExplainLevelViewController.swift */,
 			);
 			path = Mypage;
 			sourceTree = "<group>";
@@ -390,6 +394,7 @@
 				A3766C6628FC261D0037B83C /* UIView+Extension.swift in Sources */,
 				A3766C7028FC45170037B83C /* UserInfoViewController.swift in Sources */,
 				A3766C7228FC6B150037B83C /* NicknameStruct.swift in Sources */,
+				A30963CF291292B0002DE2DD /* VeganViewController.swift in Sources */,
 				A3766C6E28FC44FC0037B83C /* NicknameViewController.swift in Sources */,
 				A3766C6028FC22E70037B83C /* StoreViewController.swift in Sources */,
 				A3766C5928FC22CA0037B83C /* MyPageViewController.swift in Sources */,
@@ -398,17 +403,20 @@
 				A3766C6A28FC27550037B83C /* FirstViewController.swift in Sources */,
 				A30963C7290F9865002DE2DD /* GridCollectionViewCell.swift in Sources */,
 				A3766C1C28FC21E80037B83C /* AppDelegate.swift in Sources */,
+				A30963D12914BCEB002DE2DD /* FirstProductViewController.swift in Sources */,
 				A3766C1E28FC21E80037B83C /* SceneDelegate.swift in Sources */,
+				A3CE03082916A7FC0021BBF3 /* ExplainLevelViewController.swift in Sources */,
 				A30963CB2910DD21002DE2DD /* PopUpViewController2.swift in Sources */,
 				A3766C6228FC22ED0037B83C /* HomeViewController.swift in Sources */,
+				A30963D32914BCF8002DE2DD /* SecondProductViewController.swift in Sources */,
 				A3766C6C28FC27A50037B83C /* IntroViewController.swift in Sources */,
 				A3766C5728FC22960037B83C /* RegisterViewController.swift in Sources */,
 				A30963C92910B5CA002DE2DD /* PopUpViewController.swift in Sources */,
+				A3A47E932916917E00272BEB /* LikesBrandViewController.swift in Sources */,
 				A30963CD2910FBE6002DE2DD /* PaymentViewController.swift in Sources */,
 				A3766C5B28FC22D30037B83C /* LikesViewController.swift in Sources */,
 				A30963C5290E6E4A002DE2DD /* StandardViewController.swift in Sources */,
 				A3766C6428FC25E60037B83C /* UserInfo.swift in Sources */,
-				A3766C5E28FC22E10037B83C /* CommunityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,182 +31,146 @@ class UserInfoViewController: UIViewController {
     
     @IBOutlet weak var veganButton: UIButton!
     @IBAction func veganButtonDidTap(_ sender: UIButton) {
-//        sender.backgroundColor = sender.backgroundColor == UIColor.brightenGray ? UIColor.ecorecoColor2 : UIColor.brightenGray
-        if self.count1 == true {
+
+        if self.count1 == false {
             UIView.animate(withDuration: 0.1){
                 self.veganButton.backgroundColor = UIColor.ecorecoColor2
                 self.veganButton.setTitleColor(UIColor.white, for: .normal)
             }
-            self.count1 = false
+            self.count1 = true
         } else {
             UIView.animate(withDuration: 0.1){
                 self.veganButton.backgroundColor = UIColor.brightenGray
                 self.veganButton.setTitleColor(UIColor.black, for: .normal)
             }
-            self.count1 = true
+            self.count1 = false
         }
     }
     
-    @IBOutlet weak var refillStationButton: UIButton!
-    @IBAction func refillStationuButtonDidTap(_ sender: UIButton) {
-        if self.count2 == true {
+    @IBOutlet weak var natureButton: UIButton!
+    @IBAction func natureButtonDidTap(_ sender: UIButton) {
+        if self.count2 == false {
             UIView.animate(withDuration: 0.1){
-                self.refillStationButton.backgroundColor = UIColor.ecorecoColor2
-                self.refillStationButton.setTitleColor(UIColor.white, for: .normal)
-            }
-            self.count2 = false
-        } else {
-            UIView.animate(withDuration: 0.1){
-                self.refillStationButton.backgroundColor = UIColor.brightenGray
-                self.refillStationButton.setTitleColor(UIColor.black, for: .normal)
+                self.natureButton.backgroundColor = UIColor.ecorecoColor2
+                self.natureButton.setTitleColor(UIColor.white, for: .normal)
             }
             self.count2 = true
+        } else {
+            UIView.animate(withDuration: 0.1){
+                self.natureButton.backgroundColor = UIColor.brightenGray
+                self.natureButton.setTitleColor(UIColor.black, for: .normal)
+            }
+            self.count2 = false
         }
     }
     
-    @IBOutlet weak var dailyButton: UIButton!
-    @IBAction func dailyButtonDidTap(_ sender: UIButton) {
-        if self.count3 == true {
+    @IBOutlet weak var crueltyFreeButton: UIButton!
+    @IBAction func crueltyFreeButtonDidTap(_ sender: UIButton) {
+        if self.count3 == false {
             UIView.animate(withDuration: 0.1){
-                self.dailyButton.backgroundColor = UIColor.ecorecoColor2
-                self.dailyButton.setTitleColor(UIColor.white, for: .normal)
-            }
-            self.count3 = false
-        } else {
-            UIView.animate(withDuration: 0.1){
-                self.dailyButton.backgroundColor = UIColor.brightenGray
-                self.dailyButton.setTitleColor(UIColor.black, for: .normal)
+                self.crueltyFreeButton.backgroundColor = UIColor.ecorecoColor2
+                self.crueltyFreeButton.setTitleColor(UIColor.white, for: .normal)
             }
             self.count3 = true
+        } else {
+            UIView.animate(withDuration: 0.1){
+                self.crueltyFreeButton.backgroundColor = UIColor.brightenGray
+                self.crueltyFreeButton.setTitleColor(UIColor.black, for: .normal)
+            }
+            self.count3 = false
         }
     }
     
-    @IBOutlet weak var kitchenButton: UIButton!
-    @IBAction func kitchenButtonDidTap(_ sender: UIButton) {
-        if self.count4 == true {
+    @IBOutlet weak var packageButton: UIButton!
+    @IBAction func packageButtonDidTap(_ sender: UIButton) {
+        if self.count4 == false {
             UIView.animate(withDuration: 0.1){
-                self.kitchenButton.backgroundColor = UIColor.ecorecoColor2
-                self.kitchenButton.setTitleColor(UIColor.white, for: .normal)
-            }
-            self.count4 = false
-        } else {
-            UIView.animate(withDuration: 0.1){
-                self.kitchenButton.backgroundColor = UIColor.brightenGray
-                self.kitchenButton.setTitleColor(UIColor.black, for: .normal)
+                self.packageButton.backgroundColor = UIColor.ecorecoColor2
+                self.packageButton.setTitleColor(UIColor.white, for: .normal)
             }
             self.count4 = true
-        }
-    }
-    
-    @IBOutlet weak var upCyclingButton: UIButton!
-    @IBAction func upCyclingButtonDidTap(_ sender: UIButton) {
-        if self.count5 == true {
-            UIView.animate(withDuration: 0.1){
-                self.upCyclingButton.backgroundColor = UIColor.ecorecoColor2
-                self.upCyclingButton.setTitleColor(UIColor.white, for: .normal)
-            }
-            self.count5 = false
         } else {
             UIView.animate(withDuration: 0.1){
-                self.upCyclingButton.backgroundColor = UIColor.brightenGray
-                self.upCyclingButton.setTitleColor(UIColor.black, for: .normal)
+                self.packageButton.backgroundColor = UIColor.brightenGray
+                self.packageButton.setTitleColor(UIColor.black, for: .normal)
             }
-            self.count5 = true
-        }
-    }
-    
-    
-    @IBOutlet weak var bathButton: UIButton!
-    @IBAction func bathButtonDidTap(_ sender: UIButton) {
-        if self.count6 == true {
-            UIView.animate(withDuration: 0.1){
-                self.bathButton.backgroundColor = UIColor.ecorecoColor2
-                self.bathButton.setTitleColor(UIColor.white, for: .normal)
-            }
-            self.count6 = false
-        } else {
-            UIView.animate(withDuration: 0.1){
-                self.bathButton.backgroundColor = UIColor.brightenGray
-                self.bathButton.setTitleColor(UIColor.black, for: .normal)
-            }
-            self.count6 = true
-        }
-    }
-    
-    @IBOutlet weak var foodButton: UIButton!
-    @IBAction func foodButtonDidTap(_ sender: UIButton) {
-        if self.count7 == true {
-            UIView.animate(withDuration: 0.1){
-                self.foodButton.backgroundColor = UIColor.ecorecoColor2
-                self.foodButton.setTitleColor(UIColor.white, for: .normal)
-            }
-            self.count7 = false
-        } else {
-            UIView.animate(withDuration: 0.1){
-                self.foodButton.backgroundColor = UIColor.brightenGray
-                self.foodButton.setTitleColor(UIColor.black, for: .normal)
-            }
-            self.count7 = true
+            self.count4 = false
         }
     }
     
     @IBOutlet weak var plasticFreeButton: UIButton!
     @IBAction func plasticFreeButtonDidTap(_ sender: UIButton) {
-        if self.count8 == true {
+        if self.count5 == false {
             UIView.animate(withDuration: 0.1){
                 self.plasticFreeButton.backgroundColor = UIColor.ecorecoColor2
                 self.plasticFreeButton.setTitleColor(UIColor.white, for: .normal)
             }
-            self.count8 = false
+            self.count5 = true
         } else {
             UIView.animate(withDuration: 0.1){
                 self.plasticFreeButton.backgroundColor = UIColor.brightenGray
                 self.plasticFreeButton.setTitleColor(UIColor.black, for: .normal)
             }
+            self.count5 = false
+        }
+    }
+    
+    
+    @IBOutlet weak var oceanButton: UIButton!
+    @IBAction func oceanButtonDidTap(_ sender: UIButton) {
+        if self.count6 == false {
+            UIView.animate(withDuration: 0.1){
+                self.oceanButton.backgroundColor = UIColor.ecorecoColor2
+                self.oceanButton.setTitleColor(UIColor.white, for: .normal)
+            }
+            self.count6 = true
+        } else {
+            UIView.animate(withDuration: 0.1){
+                self.oceanButton.backgroundColor = UIColor.brightenGray
+                self.oceanButton.setTitleColor(UIColor.black, for: .normal)
+            }
+            self.count6 = false
+        }
+    }
+    
+    @IBOutlet weak var hormonesButton: UIButton!
+    @IBAction func hormonesButtonDidTap(_ sender: UIButton) {
+        if self.count7 == false {
+            UIView.animate(withDuration: 0.1){
+                self.hormonesButton.backgroundColor = UIColor.ecorecoColor2
+                self.hormonesButton.setTitleColor(UIColor.white, for: .normal)
+            }
+            self.count7 = true
+        } else {
+            UIView.animate(withDuration: 0.1){
+                self.hormonesButton.backgroundColor = UIColor.brightenGray
+                self.hormonesButton.setTitleColor(UIColor.black, for: .normal)
+            }
+            self.count7 = false
+        }
+    }
+    
+    @IBOutlet weak var nanoPlasticFreeButton: UIButton!
+    @IBAction func nanoPlasticFreeButtonDidTap(_ sender: UIButton) {
+        if self.count8 == false {
+            UIView.animate(withDuration: 0.1){
+                self.nanoPlasticFreeButton.backgroundColor = UIColor.ecorecoColor2
+                self.nanoPlasticFreeButton.setTitleColor(UIColor.white, for: .normal)
+            }
             self.count8 = true
-        }
-    }
-    
-    @IBOutlet weak var cosmeticsButton: UIButton!
-    @IBAction func cosmeticsButtonDidTap(_ sender: UIButton) {
-        if self.count9 == true {
-            UIView.animate(withDuration: 0.1){
-                self.cosmeticsButton.backgroundColor = UIColor.ecorecoColor2
-                self.cosmeticsButton.setTitleColor(UIColor.white, for: .normal)
-            }
-            self.count9 = false
         } else {
             UIView.animate(withDuration: 0.1){
-                self.cosmeticsButton.backgroundColor = UIColor.brightenGray
-                self.cosmeticsButton.setTitleColor(UIColor.black, for: .normal)
+                self.nanoPlasticFreeButton.backgroundColor = UIColor.brightenGray
+                self.nanoPlasticFreeButton.setTitleColor(UIColor.black, for: .normal)
             }
-            self.count9 = true
+            self.count8 = false
         }
     }
-    
 
-    @IBOutlet weak var cafeButton: UIButton!
-    @IBAction func cafeButtonDidTap(_ sender: UIButton) {
-        if self.count10 == true {
-            UIView.animate(withDuration: 0.1){
-                self.cafeButton.backgroundColor = UIColor.ecorecoColor2
-                self.cafeButton.setTitleColor(UIColor.white, for: .normal)
-            }
-            self.count10 = false
-        } else {
-            UIView.animate(withDuration: 0.1){
-                self.cafeButton.backgroundColor = UIColor.brightenGray
-                self.cafeButton.setTitleColor(UIColor.black, for: .normal)
-            }
-            self.count10 = true
-        }
-    }
-    
     
     @IBAction func NextButtonDidTap(_ sender: UIButton) {
         
         let introViewController = storyboard?.instantiateViewController(identifier: "IntroVC") as! IntroViewController
-        
         self.navigationController?.pushViewController(introViewController, animated: true)
     }
     

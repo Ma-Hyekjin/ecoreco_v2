@@ -48,11 +48,11 @@ extension UIColor {
         red:1,
         green:1,
         blue:1,
-        alpha:0.5)
+        alpha:0.8)
     
     static let customedEco = UIColor(
         red:0.443,
         green:0.624,
         blue:0.290,
-        alpha: 0.5)
+        alpha: 0.7)
 }
